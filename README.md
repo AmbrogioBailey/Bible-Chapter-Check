@@ -1,67 +1,73 @@
 📖 Bible Chapters Finder
 
-A simple, interactive Python CLI tool that tells you how many chapters are in any book of the Bible. Users can type a book name, get the chapter count instantly, and continue searching for as many books as they want.
-
-The program includes input validation, clean looping logic, and a closing Scripture encouragement.
+A simple and interactive Python command-line tool that tells you how many chapters are in any book of the Bible. Enter any of the 66 books and instantly get its chapter count, with clean validation and a peaceful exit message.
 
 ✨ Features
 
-🔍 Search by any Bible book (Old or New Testament)
+🔍 Look up any Bible book (Old & New Testament)
 
-✔️ Input validation — catches misspellings or non-Bible books
+✔️ Input validation — detects misspellings or invalid books
 
-🔁 Repeat mode — look up multiple books in the same run
+🔁 Repeat mode — search multiple books in a single run
 
-📜 Full 66-book list included
+🎨 Optional ASCII-art logo (via art.py)
 
-🙏 Encouraging verse on exit
+📜 Encouraging Scripture on exit
 
-🎨 Custom ASCII logo support (via art module import)
+🐍 Lightweight Python script — no dependencies needed
 
-📦 Tech Stack
-Tool	Purpose
-Python 3	CLI-based input/output
-warnings module	Suppresses syntax warnings
-Custom art module	Displays ASCII banner/logo
-▶️ How It Works
+📦 Requirements
 
-Program loads a list of all 66 Bible book names.
+Python 3.8+
 
-User types a book (e.g., Genesis, John, 1 Samuel).
+A terminal or command prompt
 
-Script checks if the book exists:
+🚀 How to Run (Terminal)
 
-If valid, prints the chapter count.
+Clone the repository:
 
-If invalid, displays an error message.
+git clone https://github.com/YOUR-USERNAME/bible-chapters-finder.git
 
-User chooses whether to search again.
 
-Program exits with John 14:27.
+Navigate into the project folder:
 
-🖥️ Running the Program
+cd bible-chapters-finder
+
+
+Run the script:
+
 python3 bible_chapters.py
 
-
-When prompted, type any Bible book name, such as:
-
+🖥️ Example Usage
 Type in a book from the Bible to find out how many chapters are in it: john
 John has 21 chapters
 
-📚 Example Session
-Type in a book from the Bible to find out how many chapters are in it: psalms
-Psalms has 150 chapters
-
 If you want to figure out the chapters for another book enter 'y', otherwise press any key to exit: y
 
-Type in a book from the Bible to find out how many chapters are in it: zephaniah
-Zephaniah has 3 chapters
+Type in a book from the Bible to find out how many chapters are in it: psalms
+Psalms has 150 chapters
 
 If you want to figure out the chapters for another book enter 'y', otherwise press any key to exit:
 Remember John 14:27, when Jesus said "Peace I leave with you..."
 
-🧩 Code Structure
-project/
-│── art.py            # Contains ASCII logo printed at startup
-│── bible_chapters.py # Main logic and loop
-└── README.md         # Project documentation
+📁 Project Structure
+bible-chapters-finder/
+│── bible_chapters.py   # Main program logic
+│── art.py              # ASCII logo (optional)
+└── README.md           # Project documentation
+
+🧠 How It Works
+
+Loads a full list of all 66 Bible books
+
+Prompts the user to enter a book name
+
+Checks for a valid match:
+
+If valid → prints chapter count
+
+If invalid → asks again
+
+Asks if the user wants to look up another book
+
+Exits with a Scripture message
